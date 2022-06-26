@@ -1,0 +1,35 @@
+:root {
+  box-sizing: border-box;
+}
+body {
+  margin: 0%;
+  padding: 0%;
+  background:wheat;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 33vw 66vw;
+  grid-template-rows: 200px 200px 200px;
+}
+
+.image {
+  padding: 0%;
+  margin: 0%;
+  height: 100vh;
+  width: 33vw;
+}
+
+.logo {
+  width: 33vw;
+  height: 20vh;
+  position: absolute;
+  top: 20px;
+  background: white;
+  font-size: 3rem;
+}
+
+.description,
+form {
+   display: inline-block;
+   background-color: violet;
+   height: 50vh;
+}
