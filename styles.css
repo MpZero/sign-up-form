@@ -98,6 +98,8 @@ body {
   background-color: #ffffff;
   border-top: 1px solid #fcf3f3af;
   /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
 }
 
@@ -118,18 +120,40 @@ p {
 
 
 /* form style */
-ul {
+/* ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-label {
+li {
+  display: inline;
+} */
+
+.form-part1 {
   display: inline-block;
-  width: 90px;
-  text-align: right;
+  
+}
+.form-part2 {
+  display: inline-block;
 }
 
+
+label { 
+  display: flex;
+  width: 90px;
+  /* text-align: right; */
+
+}
+
+input, button {
+  font-family: inherit;
+  font-size: 100%;
+  width : 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 @media only screen and (max-width: 800px) {
   .container {
@@ -167,6 +191,28 @@ label {
     top: 40px;
     /* font-size: max(3rem, 5rem, 100%); */
   }
+
+  input, button {
+    font-family: inherit;
+    font-size: 100%;
+    width : 150px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .form-part1, .form-part2 {
+    display: inline-block;
+    
+  }
+
+  input, label {
+    width: 200px;
+    text-align: left;
+  }
+  
+  
+  
 
 
 }
