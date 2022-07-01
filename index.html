@@ -34,10 +34,10 @@
           <input type="text" name="first_name" id="name">
 
           <label for="email">EMAIL</label>
-          <input type="email" name="user_email" id="email">
+          <input type="email" name="user_email" id="email" placeholder="odin@project.com">
 
           <label for="password">PASSWORD</label>
-          <input type="password" name="user_password" id="password">
+          <input class="error" type="password" name="user_password" id="password" required>
         </div>
 
         <div class="form-part2">
@@ -48,17 +48,18 @@
           <input type="tel" name="user_phone" id="phone">
 
           <label for="confirm_password">CONFIRM PASSWORD</label>
-          <input type="password" name="confirm_user_password" id="confirm_password">
+          <input class="error" type="password" name="confirm_user_password" id="confirm_password" class="error" required >
         </div>
 
       </div>
-    </form>
       <div class="grid-container footer">
-        <input class="button" type="button" value="Create Account">
+      <input class="button" type="submit" value="Create Account">
+    </form>
       <p>Already have an account? <a href="">Log in</a></p>
     </div>
   </div>
 
 </body>
+ 
 
 </html>
