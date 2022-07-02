@@ -268,7 +268,7 @@ input:focus {
 
   input,
   label {
-    display: inline-block;
+    /* display: inline-block; */
     width: 230px;
   }
 
