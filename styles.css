@@ -80,6 +80,27 @@ body {
   min-height: 100px;
 }
 
+
+#credit-img {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 600px;
+  width: 33.3vw;
+  color: white;
+  background: rgba(0, 0, 0, 0%);
+  font-size: 14px;
+  font-size: min(14px, 20px);
+  font-family: var(--font-fam), sans-serif;
+}
+
+#credit-img  a {
+  color: white;
+}
+
 .grid-container {
   padding: 13px 28px;
   text-align: left;
@@ -208,6 +229,17 @@ input:focus {
 
 .error:invalid {
   border: 2px solid red;
+
+}
+
+.error:invalid + #span:after {
+  border: 2px solid red;
+
+  content: "";
+  /* background-color: red; */
+  position: relative;
+  top: 22px;
+  right: 252px;
 }
 
 .error:valid {
@@ -250,9 +282,14 @@ input:focus {
     justify-content: center;
     width: 100%;
     height: min(150px, 120px);
-    /* border: 6px solid blue; */
     top: 40px;
-    /* font-size: max(3rem, 5rem, 100%); */
+  }
+
+  #credit-img {
+    top: 160px;
+    font-size: 12px;
+    display: inline-block;
+    width: 200px;
   }
 
   .form {
